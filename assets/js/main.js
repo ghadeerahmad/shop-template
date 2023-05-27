@@ -9,9 +9,11 @@ $(document).ready(function () {
         if (currentSlide === slides.length - 1)
             currentSlide = 0
         slides.forEach((item) => {
+            item.classList.add('fadeAway')
             item.classList.remove('active')
             item.classList.remove('fadeLeft')
         })
+        slides[currentSlide].classList.remove('fadeAway')
         slides[currentSlide].classList.add('active')
         slides[currentSlide].classList.add('fadeLeft')
         currentSlide++

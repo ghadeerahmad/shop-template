@@ -192,6 +192,24 @@ footer {
     font-size: 30px;
 }
 
+.fadeAway {
+    animation-name: fadeAway;
+    animation-duration: 1s;
+}
+
+@keyframes fadeAway {
+    0% {
+        opacity: 1;
+    }
+
+    100% {
+        transform: translateX(-100px);
+        opacity: 0;
+        display: none;
+
+    }
+}
+
 @keyframes fadeLeft {
     0% {
         opacity: 0;
